@@ -438,7 +438,7 @@ class MainWidget(QtWidgets.QWidget):
         elif self.e == 'errorNotChar':
             self.messageNotChar = QtWidgets.QMessageBox.critical(self, "경고", "문자만 입력할 수 있습니다.")
         else:
-            self.messageNotChar = QtWidgets.QMessageBox.critical(self, "Random Password Generator", self.e)
+            self.message = QtWidgets.QMessageBox.critical(self, "Random Password Generator", self.e)
 
 def main():
     app = QtWidgets.QApplication([])
